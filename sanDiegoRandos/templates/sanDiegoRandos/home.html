@@ -1,9 +1,39 @@
+{% load staticfiles %}
+
 <html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
+  <head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+  </head>
+<body>
+  <header class="header">
+    <h1 class="banner-text"><span>San Diego Randonneurs</span></h1>
+    <img class="header-image" src="{% static 'images/bikeBanner.jpg' %}" alt="My image"/>
+  </header>
+
+  <div class="desc-content">
+    Welcome to <strong>San Diego Randonneurs</strong>, a cycling group dedicated to randonneuring, which is a form of long-distance, self-supported, endurance cycling.
+    This style of riding is non-competitive in nature, and self-sufficiency is paramount.
+    When riders participate in randonneuring events, they are part of a long tradition that goes back to the beginnings of the sport of cycling in France and Italy.
+    Friendly camaraderie, not competition, is the hallmark of randonneuring.
+    </br> </br>
+    To keep current on what's happening with San Diego Randonneurs, it's important to join the Google Group, <a href="https://groups.google.com/forum/#!forum/sdrando"> <strong> sdrando </strong> </a>.
+    There are occasional group discussions, but also notices sent out about upcoming events.
+    Joining the group is the best way to ensure that you get the latest information,
+       and are able to ask other members questions about anything related to long-distance riding in San Diego.
+  </div>
+
+  <div class="dates">
+    <div>
+      <h1>Title </h1>
+    </div>
+  </div>
+  
+</body>
 </html>
