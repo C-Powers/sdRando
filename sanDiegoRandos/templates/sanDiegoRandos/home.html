@@ -1,22 +1,6 @@
-{% load staticfiles %}
+{% extends 'sanDiegoRandos/base.html' %}
 
-<html>
-  <head>
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
-  </head>
-<body>
-  <header class="header">
-    <h1 class="banner-text"><span>San Diego Randonneurs</span></h1>
-    <img class="header-image" src="{% static 'images/bikeBanner.jpg' %}" alt="My image"/>
-  </header>
-
+{% block content %}
   <div class="desc-content">
     Welcome to <strong>San Diego Randonneurs</strong>, a cycling group dedicated to randonneuring, which is a form of long-distance, self-supported, endurance cycling.
     This style of riding is non-competitive in nature, and self-sufficiency is paramount.
@@ -34,6 +18,4 @@
       <h1>Title </h1>
     </div>
   </div>
-  
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'sanDiegoRandos/base.html' %}
+
+{% block content %}
+  <p>
+    Hi bitches
+  </p>
+
+  <!--
+  '''
+  location = models.CharField(max_length=200)
+  freeRoute = models.BooleanField()
+  distance = models.CharField(max_length=200)
+  climb = models.CharField(max_length=200)
+  permName = models.CharField(max_length=200)
+  organizer = models.CharField(max_length=200)
+  permLink = models.URLField(null=True)
+  '''
+  -->
+
+  {% for post in posts %}
+  <p>
+    {{ post.location|linebreaks }}
+    {{ post.freeRoute|linebreaks }}
+    {{ post.distance|linebreaks }}
+    {{ post.climb|linebreaks }}
+    {{ post.permName|linebreaks }}
+    {{ post.organizer|linebreaks }}
+    {{ post.permLink|linebreaks }}
+  </p>
+  {% endfor %}
+
+{% endblock %}

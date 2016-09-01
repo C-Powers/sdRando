@@ -81,8 +81,9 @@ body {
   padding: 1em 0 0 1em;
 }
 
-/* line 21, ../sass/style.scss */
-h1 span {
+/* line 23, ../sass/style.scss */
+h1 span a, h1 span a:active, h1 span a:hover, h1 span a:visited {
+  text-decoration: none;
   color: #f0eceb;
   font: bold 2.1em/45px Helvetica, Sans-Serif;
   letter-spacing: -1px;
@@ -92,12 +93,12 @@ h1 span {
   padding: 10px;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .desc-content {
   font-size: 1.5em;
   padding: 2em;
 }
-/* line 34, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .desc-content a {
   text-decoration: none;
   color: #f0eceb;
