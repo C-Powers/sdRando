@@ -6,7 +6,7 @@ from .permScrape import getPerms, scrapeSite
 def home(request):
     return render(request, 'sanDiegoRandos/home.html', {})
 
-def returnPermanents(request):
+def gatherPermanents(request):
     '''
     location = models.CharField(max_length=200)
     freeRoute = models.BooleanField()
@@ -16,12 +16,24 @@ def returnPermanents(request):
     organizer = models.CharField(max_length=200)
     permLink = models.URLField(null=True)
     '''
+
+    sdPermList = getPerms()
+
+    for routes in sdPermList:
+        print(routes)
+        Permanents.objects.create(
+        location = routes[0],
+        freeRoute = routes[1],
+        distance = routes[2],
+        climb = routes[3],
+        permName = routes[5],
+        organizer = routes[6],
+        permLink = "https://rusa.org/cgi-bin/permsearch_PF.pl")
+
+    #need to remove duplicate rows in sqlite db
+
+    return redirect('sanDiegoRandos/permanents.html')
+
+def returnPermanents(request):
     posts = Permanents.objects.all()
-    posts.location="poop meistro"
-    posts.freeRoute= True
-    posts.distance = "200km"
-    posts.climb = "too much"
-    posts.permName = "poopy"
-    posts.organizer = "jerk"
-    posts.permLink = ""
     return render(request, 'sanDiegoRandos/permanents.html',{'posts':posts})

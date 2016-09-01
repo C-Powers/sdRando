@@ -38,11 +38,16 @@ def getPerms():
     allPermInfo = rusaSoup.select('tr')
     #testing
     somePerms = allPermInfo[1:20]
+    sdPerms = []
     for i in range(1, len(allPermInfo)-1):
         #aPerm = somePerms[i]
         aPerm = allPermInfo[i]
         aPermInfo = aPerm.select('td')
         if aPermInfo[0].getText() == 'CA: San Diego':
+            '''
+            print('+++++++++++')
+            print(aPermInfo)
+            print('+++++++++++')
             print('location -- ', aPermInfo[0].getText())
             print('Free Route?  ', aPermInfo[1].getText())
             print('Distance -- ', aPermInfo[2].getText(), ' Km')
@@ -50,3 +55,11 @@ def getPerms():
             print('Name -- ', aPermInfo[5].getText())
             print('Organizer -- ', aPermInfo[6].getText())
             print('------')
+            '''
+            itemsCollect = []
+            for items in aPermInfo:
+                itemsCollect.append(items.getText())
+                #print(itemsCollect)
+            sdPerms.append(itemsCollect)
+    #print("SD PERMS", sdPerms)
+    return sdPerms
