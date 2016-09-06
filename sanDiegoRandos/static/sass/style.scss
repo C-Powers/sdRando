@@ -16,8 +16,11 @@ body {
   padding: 1em 0 0 1em;
 }
 
-$a-tags: 'a, a:active, a:hover, a:visited';
 
+.header {
+  display: inline;
+}
+$a-tags: 'a, a:active, a:hover, a:visited';
 h1 {
   span {
    #{$a-tags}{
@@ -25,18 +28,70 @@ h1 {
      color: #f0eceb;
      font: bold 2.1em/45px Helvetica, Sans-Serif;
      letter-spacing: -1px;
-     background: rgb(0, 0, 0); /* fallback color */
+     background: rgb(0, 0, 0);
      background: rgba(0, 0, 0, 0.7);
      padding: 10px;
    }
  }
 }
 
+
+.header-links {
+  display: inline;
+  float:right;
+  margin-left: 70vw;
+  padding: 1em 1em 0 1em;
+  position: fixed;
+  z-index: 99;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  #{$a-tags} {
+    /*color: rgb(0, 0, 0);
+    font: bold 1.7em/45px Helvetica, Sans-Serif;
+    padding-right: 1.0em;*/
+    text-decoration: none;
+    color: #f0eceb;
+    font: bold 2.1em/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+  }
+}
+
+/* In home.html. Described on the main SDRANDOS webpage*/
 .desc-content {
-  font-size: 1.5em;
-  padding: 2em;
+  padding: 2em 6em 2em 6em;
+  h1 {
+    font-size: 2.0em;
+    padding-bottom: .5em;
+  }
+  p{
+    font-size: 1.5em;
+  }
   a{
     text-decoration: none;
     color: #f0eceb;
   }
+}
+
+/* permanents.html*/
+.permanent-info {
+  padding: 2em 6em 2em 6em;
+  h1{
+    font-size: 2.0em;
+    padding-bottom: .25em;
+    padding: 0 0 .5em 1em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+
+table {
+  margin: 2em 0 5em 5em;
+  font-size: 1.5em;
+}
+th {
+  padding-right: 20px;
+}
+td {
+  padding-right: 20px;
 }

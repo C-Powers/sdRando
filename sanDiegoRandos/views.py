@@ -6,6 +6,10 @@ from .permScrape import getPerms, scrapeSite
 def home(request):
     return render(request, 'sanDiegoRandos/home.html', {})
 
+def returnPermanents(request):
+    posts = Permanents.objects.all()
+    return render(request, 'sanDiegoRandos/permanents.html',{'posts':posts})
+
 def gatherPermanents(request):
     '''
     location = models.CharField(max_length=200)
@@ -31,9 +35,9 @@ def gatherPermanents(request):
         permLink = "https://rusa.org/cgi-bin/permsearch_PF.pl")
 
     #need to remove duplicate rows in sqlite db
-
-    return redirect('sanDiegoRandos/permanents.html')
-
-def returnPermanents(request):
-    posts = Permanents.objects.all()
-    return render(request, 'sanDiegoRandos/permanents.html',{'posts':posts})
+    '''
+    for row in Permanents.objects.all():
+        if Permanents.objects.filter(permName=row.permName).count() > 1:
+            row.delete
+            '''
+    return render(request, 'sanDiegoRandos/gather.html', {})
