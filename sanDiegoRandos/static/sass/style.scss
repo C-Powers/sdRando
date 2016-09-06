@@ -35,7 +35,7 @@ h1 {
  }
 }
 
-
+/* //this is old with the new navbar
 .header-links {
   display: inline;
   float:right;
@@ -46,13 +46,30 @@ h1 {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
   #{$a-tags} {
-    /*color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font: bold 1.7em/45px Helvetica, Sans-Serif;
-    padding-right: 1.0em;*/
+    padding-right: 1.0em;
     text-decoration: none;
     color: #f0eceb;
     font: bold 2.1em/45px Helvetica, Sans-Serif;
     letter-spacing: -1px;
+  }
+}
+*/
+
+
+/* New navbar styling, utilizing bootstrap3*/
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  border:none;
+  font-size: 1.5em;
+  .nav-pills {
+    .active a{
+      background-color: #729f98;
+    }
+    .active a:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
   }
 }
 

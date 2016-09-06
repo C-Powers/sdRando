@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
   </head>
 <body>
+  <!--
   <header class="header">
     <div class="header-links">
       <a href="/permanents">Permanents</a>
@@ -20,7 +21,22 @@
     <h1 class="banner-text"><span> <a href="/"> San Diego Randonneurs </a></span></h1>
     <img class="header-image" src="{% static 'images/bikeBanner.jpg' %}" alt="My image"/>
   </header>
+-->
 
+<header class="header">
+  <img class="header-image" src="{% static 'images/bikeBanner.jpg' %}" alt="My image"/>
+</header>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"> <a href="/"> San Diego Randonneurs </a> </li>
+      <li role="presentation" class="active"><a href="/permanents">Permanents</a></li>
+      <li role="presentation" class="active"><a href = "https://rusa.org/"> RUSA </a></li>
+      <li role="presentation" class="active"><a href="#"> Terminology </a></li>
+    </ul>
+  </div>
+</nav>
 
   {% block content %}
   {% endblock %}

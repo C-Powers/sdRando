@@ -97,76 +97,91 @@ h1 span a, h1 span a:active, h1 span a:hover, h1 span a:visited {
   padding: 10px;
 }
 
-/* line 39, ../sass/style.scss */
+/* //this is old with the new navbar
 .header-links {
   display: inline;
-  float: right;
+  float:right;
   margin-left: 70vw;
   padding: 1em 1em 0 1em;
   position: fixed;
   z-index: 99;
-  background: black;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
+  a, a:active, a:hover, a:visited {
+    color: rgb(0, 0, 0);
+    font: bold 1.7em/45px Helvetica, Sans-Serif;
+    padding-right: 1.0em;
+    text-decoration: none;
+    color: #f0eceb;
+    font: bold 2.1em/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+  }
 }
-/* line 48, ../sass/style.scss */
-.header-links a, .header-links a:active, .header-links a:hover, .header-links a:visited {
-  /*color: rgb(0, 0, 0);
-  font: bold 1.7em/45px Helvetica, Sans-Serif;
-  padding-right: 1.0em;*/
-  text-decoration: none;
-  color: #f0eceb;
-  font: bold 2.1em/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
+*/
+/* New navbar styling, utilizing bootstrap3*/
+/* line 62, ../sass/style.scss */
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  font-size: 1.5em;
+}
+/* line 67, ../sass/style.scss */
+.navbar .nav-pills .active a {
+  background-color: #729f98;
+}
+/* line 70, ../sass/style.scss */
+.navbar .nav-pills .active a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* In home.html. Described on the main SDRANDOS webpage*/
-/* line 60, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .desc-content {
   padding: 2em 6em 2em 6em;
 }
-/* line 62, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .desc-content h1 {
   font-size: 2.0em;
   padding-bottom: .5em;
 }
-/* line 66, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .desc-content p {
   font-size: 1.5em;
 }
-/* line 69, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .desc-content a {
   text-decoration: none;
   color: #f0eceb;
 }
 
 /* permanents.html*/
-/* line 76, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .permanent-info {
   padding: 2em 6em 2em 6em;
 }
-/* line 78, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .permanent-info h1 {
   font-size: 2.0em;
   padding-bottom: .25em;
   padding: 0 0 .5em 1em;
 }
-/* line 83, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .permanent-info p {
   font-size: 1.5em;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 table {
   margin: 2em 0 5em 5em;
   font-size: 1.5em;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 th {
   padding-right: 20px;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 td {
   padding-right: 20px;
 }
