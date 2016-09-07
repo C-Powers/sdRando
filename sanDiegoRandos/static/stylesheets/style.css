@@ -97,93 +97,54 @@ h1 span a, h1 span a:active, h1 span a:hover, h1 span a:visited {
   padding: 10px;
 }
 
-/* //this is old with the new navbar
-.header-links {
-  display: inline;
-  float:right;
-  margin-left: 70vw;
-  padding: 1em 1em 0 1em;
-  position: fixed;
-  z-index: 99;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-  a, a:active, a:hover, a:visited {
-    color: rgb(0, 0, 0);
-    font: bold 1.7em/45px Helvetica, Sans-Serif;
-    padding-right: 1.0em;
-    text-decoration: none;
-    color: #f0eceb;
-    font: bold 2.1em/45px Helvetica, Sans-Serif;
-    letter-spacing: -1px;
-  }
-}
-*/
 /* New navbar styling, utilizing bootstrap3*/
-/* line 62, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .navbar {
   background: rgba(0, 0, 0, 0.7);
   border: none;
   font-size: 1.5em;
 }
-/* line 67, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
+.navbar .navbar-brand {
+  color: #729f98;
+  font-size: 1.5em;
+  text-shadow: none;
+}
+/* line 49, ../sass/style.scss */
 .navbar .nav-pills .active a {
   background-color: #729f98;
 }
-/* line 70, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .navbar .nav-pills .active a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* In home.html. Described on the main SDRANDOS webpage*/
-/* line 77, ../sass/style.scss */
-.desc-content {
-  padding: 2em 6em 2em 6em;
-}
-/* line 79, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .desc-content h1 {
   font-size: 2.0em;
-  padding: 0 0 .5em 1em;
 }
-/* line 83, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .desc-content p {
-  margin: 1em 0 2em 2em;
   font-size: 1.5em;
 }
-/* line 87, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .desc-content a {
   text-decoration: none;
   color: #f0eceb;
 }
 
 /* permanents.html*/
-/* line 94, ../sass/style.scss */
-.permanent-info {
-  padding: 2em 6em 2em 6em;
-}
-/* line 96, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .permanent-info h1 {
   font-size: 2.0em;
-  padding-bottom: .25em;
-  padding: 0 0 .5em 1em;
 }
-/* line 101, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .permanent-info p {
-  margin: 1em 0 2em 2em;
   font-size: 1.5em;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 table {
-  margin: 2em 0 5em 5em;
-  font-size: 1.5em;
-}
-
-/* line 111, ../sass/style.scss */
-th {
-  padding-right: 20px;
-}
-
-/* line 114, ../sass/style.scss */
-td {
-  padding-right: 20px;
+  font-size: 1.2em;
 }

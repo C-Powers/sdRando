@@ -35,34 +35,16 @@ h1 {
  }
 }
 
-/* //this is old with the new navbar
-.header-links {
-  display: inline;
-  float:right;
-  margin-left: 70vw;
-  padding: 1em 1em 0 1em;
-  position: fixed;
-  z-index: 99;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-  #{$a-tags} {
-    color: rgb(0, 0, 0);
-    font: bold 1.7em/45px Helvetica, Sans-Serif;
-    padding-right: 1.0em;
-    text-decoration: none;
-    color: #f0eceb;
-    font: bold 2.1em/45px Helvetica, Sans-Serif;
-    letter-spacing: -1px;
-  }
-}
-*/
-
-
 /* New navbar styling, utilizing bootstrap3*/
 .navbar {
   background: rgba(0, 0, 0, 0.7);
   border:none;
   font-size: 1.5em;
+  .navbar-brand {
+    color: #729f98;
+    font-size: 1.5em;
+    text-shadow:none;
+  }
   .nav-pills {
     .active a{
       background-color: #729f98;
@@ -75,13 +57,10 @@ h1 {
 
 /* In home.html. Described on the main SDRANDOS webpage*/
 .desc-content {
-  padding: 2em 6em 2em 6em;
   h1 {
     font-size: 2.0em;
-    padding: 0 0 .5em 1em;
   }
   p{
-    margin: 1em 0 2em 2em;
     font-size: 1.5em;
   }
   a{
@@ -92,25 +71,14 @@ h1 {
 
 /* permanents.html*/
 .permanent-info {
-  padding: 2em 6em 2em 6em;
   h1{
     font-size: 2.0em;
-    padding-bottom: .25em;
-    padding: 0 0 .5em 1em;
   }
   p {
-    margin: 1em 0 2em 2em;
     font-size: 1.5em;
   }
 }
 
 table {
-  margin: 2em 0 5em 5em;
-  font-size: 1.5em;
-}
-th {
-  padding-right: 20px;
-}
-td {
-  padding-right: 20px;
+  font-size: 1.2em;
 }

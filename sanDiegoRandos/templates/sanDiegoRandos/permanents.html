@@ -13,9 +13,9 @@
     '''
     -->
 
-    <div class="permanent-info">
-      <h1> What is a Permanent </h1>
-      <p>
+    <div class="permanent-info container">
+      <h1 class="display-3"> What is a Permanent </h1>
+      <p class="lead">
         A Permanent is a long distance cycling route that is “permanently available”.
         As long as you get approval and documentation for the Permanent organizer,
         Randonneurs USA (RUSA) credit for doing a Permanent.
@@ -23,25 +23,29 @@
       </p>
     </div>
 
+  <div class="container">
+    <table class="table table-inverse table-sm">
+      <thead class="thead">
+        <tr>
+          <th> Location </th>
+          <th> Free </th>
+          <th> Distance </br> (km) </th>
+          <th> Climbing (ft) </th>
+          <th> Permanent Name </th>
+          <th> Organizer </th>
+        </tr>
+      </thead>
 
-  <table>
-    <tr>
-      <th> Location </th>
-      <th> Free </th>
-      <th> Distance </br> (km) </th>
-      <th> Climbing (ft) </th>
-      <th> Permanent Name </th>
-      <th> Organizer </th>
-    </tr>
-    {% for post in posts %}
-      <tr>
-        <td> {{ post.location }} </td>
-        <td> {{ post.freeRoute }} </td>
-        <td> {{ post.distance }} </td>
-        <td> {{ post.climb }} </td>
-        <td> {{ post.permName }} </td>
-        <td> {{ post.organizer }} </td>
-      </tr>
-  {% endfor %}
-</table>
-{% endblock %}
+      {% for post in posts %}
+        <tr>
+          <td> {{ post.location }} </td>
+          <td> {{ post.freeRoute }} </td>
+          <td> {{ post.distance }} </td>
+          <td> {{ post.climb }} </td>
+          <td> {{ post.permName }} </td>
+          <td> {{ post.organizer }} </td>
+        </tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endblock %}
