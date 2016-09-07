@@ -32,7 +32,7 @@ def gatherPermanents(request):
         climb = routes[3],
         permName = routes[5],
         organizer = routes[6],
-        permLink = "https://rusa.org/cgi-bin/permsearch_PF.pl")
+        permLink = routes[8])
 
     #need to remove duplicate rows in sqlite db
     '''

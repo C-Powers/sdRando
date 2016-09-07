@@ -60,6 +60,8 @@ def getPerms():
             for items in aPermInfo:
                 itemsCollect.append(items.getText())
                 #print(itemsCollect)
+            if aPermInfo[5].find('a').get('href'):
+                itemsCollect.append('https://rusa.org' + aPermInfo[5].find('a').get('href'))
             sdPerms.append(itemsCollect)
     #print("SD PERMS", sdPerms)
     return sdPerms

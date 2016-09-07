@@ -66,85 +66,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, ../sass/style.scss */
 body {
   background-color: #729f98;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 .header-image {
   height: auto;
   width: 100%;
   position: relative;
-}
-
-/* line 14, ../sass/style.scss */
-.banner-text {
-  width: 100%;
-  padding: 1em 0 0 1em;
-}
-
-/* line 20, ../sass/style.scss */
-.header {
-  display: inline;
-}
-
-/* line 26, ../sass/style.scss */
-h1 span a, h1 span a:active, h1 span a:hover, h1 span a:visited {
-  text-decoration: none;
-  color: #f0eceb;
-  font: bold 2.1em/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
-  background: black;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  padding-bottom: 2em;
 }
 
 /* New navbar styling, utilizing bootstrap3*/
-/* line 39, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .navbar {
   background: rgba(0, 0, 0, 0.7);
   border: none;
   font-size: 1.5em;
 }
-/* line 43, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .navbar .navbar-brand {
   color: #729f98;
   font-size: 1.5em;
   text-shadow: none;
 }
-/* line 49, ../sass/style.scss */
-.navbar .nav-pills .active a {
+/* line 28, ../sass/style.scss */
+.navbar .nav-pills .active a, .navbar .nav-pills a:hover, .navbar .nav-pills a:visited {
   background-color: #729f98;
 }
-/* line 52, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .navbar .nav-pills .active a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* In home.html. Described on the main SDRANDOS webpage*/
-/* line 60, ../sass/style.scss */
-.desc-content h1 {
-  font-size: 2.0em;
+/* I want to add a spacer between all content.
+   So Im adding 2em of padding between all .container elements
+*/
+/* line 39, ../sass/style.scss */
+.container {
+  padding-bottom: 2em;
 }
-/* line 63, ../sass/style.scss */
+
+/* In home.html. Described on the main SDRANDOS webpage*/
+/* line 43, ../sass/style.scss */
+.desc-content {
+  padding-bottom: 2em;
+}
+/* line 45, ../sass/style.scss */
+.desc-content h1 {
+  padding-bottom: .25em;
+}
+/* line 48, ../sass/style.scss */
 .desc-content p {
   font-size: 1.5em;
 }
-/* line 66, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .desc-content a {
   text-decoration: none;
   color: #f0eceb;
 }
 
 /* permanents.html*/
-/* line 74, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .permanent-info h1 {
-  font-size: 2.0em;
+  padding-bottom: .25em;
 }
-/* line 77, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .permanent-info p {
   font-size: 1.5em;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 table {
   font-size: 1.2em;
 }
